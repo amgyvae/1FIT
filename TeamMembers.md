@@ -1,5 +1,5 @@
 Web-Dev Team's project:
-Team's member: 
+Team members: 
 Sharipzhan Margulan
 Torekhan Zhaxylyk
 Kaiyrzhan Yerassyl
