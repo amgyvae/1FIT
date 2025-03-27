@@ -1,2 +1,2 @@
 # 1FIT
-Web-Dev team's project
+Web-Dev team's project 1FIT
