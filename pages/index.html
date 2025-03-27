@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1Fit - Главная</title>
+    <link rel="stylesheet" href="../assets/css/style_index.css">
+    <script defer src="../assets/js/main.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>1Fit</h1>
+            <nav>
+                <ul>
+                    <li><a href="#subscriptions">Подписки</a></li>
+                    <li><a href="catalog.html">Каталог</a></li>
+                    <li><a href="login.html">Войти</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <section id="banner">
+        <div class="container">
+            <h2>Фитнес по подписке</h2>
+            <p>Посещайте любые залы без ограничений</p>
+            <a href="#subscriptions" class="btn">Выбрать подписку</a>
+        </div>
+    </section>
+    
+    <section id="subscriptions">
+        <div class="container">
+            <h2>Выберите свою подписку</h2>
+            <div class="subscription-list">
+                <div class="subscription">
+                    <h3>Базовая</h3>
+                    <p>Доступ в 50+ залов</p>
+                    <p>Цена: 9 900 тг/мес</p>
+                    <a href="#" class="btn buy-btn" data-plan="basic">Купить</a>
+                </div>
+                <div class="subscription">
+                    <h3>Премиум</h3>
+                    <p>Доступ в 100+ залов</p>
+                    <p>Цена: 14 900 тг/мес</p>
+                    <a href="#" class="btn buy-btn" data-plan="premium">Купить</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gyms">
+        <div class="container">
+            <h2>Каталог залов</h2>
+            <select id="gym-filter">
+                <option value="all">Все</option>
+                <option value="Фитнес">Фитнес</option>
+                <option value="Тренажерный зал">Тренажерный зал</option>
+                <option value="Кроссфит">Кроссфит</option>
+                <option value="Йога">Йога</option>
+                <option value="Плавание">Плавание</option>
+            </select>
+            <div class="gym-list">
+                <div class="gym">
+                    <h3>Фитнес Центр X</h3>
+                    <p>Алматы, ул. Абая 50</p>
+                    <img src="../assets/images/fitnessPic1.jpg" alt="Зал" class="gym-thumb"> <br>
+                    <a href="../pages/gym.html?id=1" class="btn">Подробнее</a>
+                </div>
+                <div class="gym">
+                    <h3>Спортзал Y</h3>
+                    <p>Астана, пр. Назарбаева 10</p>
+                    <img src="../assets/images/gymPic1.jpg" alt="Зал" class="gym-thumb"> <br>
+                    <a href="../pages/gym.html?id=2" class="btn">Подробнее</a>
+                </div>
+                <div class="gym">
+                    <h3>Тренажерный зал Z</h3>
+                    <p>Шымкент, ул. Байтурсынова 20</p>
+                    <img src="../assets/images/gymPic2.jpg" alt="Зал" class="gym-thumb"> <br>
+                    <a href="../pages/gym.html?id=4" class="btn">Подробнее</a>
+                </div>
+                <div class="gym">
+                    <h3>Йога-центр Lotus</h3>
+                    <p>Алматы</p>
+                    <img src="../assets/images/yogaPic1.jpg" alt="Зал" class="gym-thumb"> <br>
+                    <a href="../pages/gym.html?id=3" class="btn">Подробнее</a>
+                </div>
+                <div class="gym">
+                    <h3>Бассейн Aqua</h3>
+                    <p>Астана</p>
+                    <img src="../assets/images/swimmingPic1.jpg" alt="Зал" class="gym-thumb"> <br>
+                    <a href="../pages/gym.html?id=35" class="btn">Подробнее</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 1Fit Clone. Все права защищены.</p>
+        </div>
+    </footer>
+</body>
+</html>

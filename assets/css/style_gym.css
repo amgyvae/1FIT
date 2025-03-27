@@ -1,0 +1,277 @@
+/* Стили для страницы gym.html */
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Шапка сайта */
+header {
+    background: white;
+    color: black;
+    padding: 5px 0;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #6200ea;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 40px 0;
+}
+
+.gym-image {
+    width: 50%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+#gym-details h2 {
+    font-size: 2em;
+    color: #6200ea;
+    margin-bottom: 10px;
+}
+
+#gym-details p {
+    font-size: 1.1em;
+    margin: 5px 0;
+}
+
+#gym-details ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 20px;
+}
+
+#gym-details ul li {
+    background: #fff;
+    border-left: 5px solid #6200ea;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.05);
+}
+
+footer {
+    background: #6200ea;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Встроенная форма */
+.btn {
+    background-color: #6200ea;
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.btn:hover {
+    background-color: #4b00b5;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 30px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 500px;
+    position: relative;
+}
+
+.modal-content form {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-content label {
+    font-weight: 500;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.modal-content input {
+    border: 2px solid #ddd;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    transition: border 0.3s ease;
+    font-size: 14px;
+}
+
+.modal-content input:focus {
+    border: 2px solid #6200ea;
+    outline: none;
+}
+
+.modal-content h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #6200ea;
+    font-size: 22px;
+}
+
+
+.modal-content .btn {
+    width: 100%;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+/*Time to put a schedule*/
+#timeSlots {
+    display: block;
+    margin-top: 50px;
+}
+
+#timeSlots p {
+    font-size: 2em;
+    color: #1b0042;
+    margin-bottom: 10px;
+}
+
+#slotButtons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.slot-btn {
+    padding: 10px 18px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.slot-btn.available {
+    background-color: #4caf50; 
+}
+
+.slot-btn.unavailable {
+    background-color: #f44336; 
+    cursor: not-allowed;
+}
+
+.slot-btn.selected {
+    outline: 3px solid #6200ea;
+}
+
+.success-message {
+    margin-top: 15px;
+    color: #4caf50;
+    font-weight: 600;
+    text-align: center;
+    font-size: 16px;
+}
+
+
+.booking-form {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.booking-form input {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+}
+
+
+#dayButtons, #timeButtons {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.day-btn, .time-btn {
+    padding: 10px 18px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.day-btn {
+    background-color: #6200ea;
+}
+
+.day-btn.selected {
+    background-color: #3700b3;
+}
+
+.time-btn.available {
+    background-color: #4caf50;
+}
+
+.time-btn.unavailable {
+    background-color: #f44336;
+    cursor: not-allowed;
+}
+
+.time-btn.selected {
+    outline: 3px solid #6200ea;
+}

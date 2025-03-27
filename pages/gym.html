@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Детали зала</title>
+    <link rel="stylesheet" href="../assets/css/style_gym.css">
+    <script defer src="../assets/js/gym.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>1Fit</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="catalog.html">Каталог</a></li>
+                    <li><a href="login.html">Войти</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="gym-details">
+        <div class="container">
+            <h2 id="gym-name"></h2>
+            <p id="gym-address"></p>
+            <p id="gym-category"></p>
+            <h3>Расписание</h3>
+            <ul id="gym-schedule"></ul>
+            <img id="gym-image" src="" alt="Изображение Зала" class="gym-image">
+
+            <br>
+
+            <!-- Кнопка для открытия модального окна 
+            <button class="btn" id="openModalBtn">Забронировать тренировку оп Форме</button> -->
+
+            <!-- Модальное окно 
+            <div id="bookingModal" class="modal">
+                <div class="modal-content">
+                    <span class="close" id="closeModalBtn">&times;</span>
+                    <h3>Форма бронирования</h3>
+                    <form id="bookingForm">
+                    <label>Имя:</label>
+                    <input type="text" required>
+                    <label>Email:</label>
+                    <input type="email" required>
+                    <label>Дата:</label>
+                    <input type="date" required>
+                    <label>Время:</label>
+                    <input type="time" required>
+                    <button type="submit" class="btn">Забронировать</button>
+                    </form>
+                </div>
+            </div> -->
+
+            <div id="bookingSection">
+                <h3>Выберите день:</h3>
+                <div id="dayButtons"></div>
+            
+                <h3>Выберите время:</h3>
+                <div id="timeButtons"></div>
+            
+                <form id="bookingForm">
+                    <button type="submit" class="btn">Забронировать</button>
+                </form>
+            
+                <p id="successMessage" class="success-message" style="display: none;">✅ Успешно забронировано!</p>
+            </div>
+            
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 1Fit Clone. Все права защищены.</p>
+        </div>
+    </footer>
+</body>
+</html>
